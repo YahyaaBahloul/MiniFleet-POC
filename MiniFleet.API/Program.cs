@@ -33,6 +33,8 @@ if (app.Environment.IsDevelopment())
 }
 
 //  ACTIVATION DU CORS 
+app.UseRouting(); 
+
 app.UseCors("AllowAngularApp");
 
 app.UseHttpsRedirection();
